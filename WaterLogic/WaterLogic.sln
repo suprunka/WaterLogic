@@ -8,12 +8,18 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Repository", "ClassLibrary1\Repository.csproj", "{82994BBB-FD77-437C-B657-21A07ECF5D8B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesktopApp", "DesktopApp\DesktopApp.csproj", "{F1B76C7E-72F6-41CA-AF94-CCD79E311D90}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D80DCA6-BE17-4720-B52D-C1DF67F17D57} = {6D80DCA6-BE17-4720-B52D-C1DF67F17D57}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{E0ABF4BF-7C0C-4ECB-AACF-E00A7978A105}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{5E227531-4F50-4F10-A4D6-1F50A3016D5E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication", "WebApplication\WebApplication.csproj", "{3BB7E58E-03A2-4F43-969D-0708ECDE28B0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{6D80DCA6-BE17-4720-B52D-C1DF67F17D57} = {6D80DCA6-BE17-4720-B52D-C1DF67F17D57}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

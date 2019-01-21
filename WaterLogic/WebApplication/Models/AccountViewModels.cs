@@ -65,9 +65,24 @@ namespace WebApplication.Models
     public class RegisterViewModel
     {
         [Required]
+        [Display(Name = "Name")]
+        public string Name { get; set; }
+
+        [Required]
+        [Display(Name = "Address")]
+        public string Address { get; set; }
+
+        [Required]
         [EmailAddress]
         [Display(Name = "Email")]
         public string Email { get; set; }
+
+        [Required]
+        [MaxLength(8, ErrorMessage = "The phone must be at max 8 characters long.")]
+        [MinLength(8, ErrorMessage = "The phone must be at least 8 characters long.")]
+        [RegularExpression("^[0-9]*$", ErrorMessage = "The phone must be a number.")]
+        [Display(Name = "Phone")]
+        public string Phone { get; set; }
 
         [Required]
         [StringLength(100, ErrorMessage = "The {0} must be at least {2} characters long.", MinimumLength = 6)]

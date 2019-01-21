@@ -7,6 +7,28 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+    
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Background="Gray" Grid.Row="0" Grid.Column="0" Grid.RowSpan="1">
+            <StackPanel>
+                <Button Height="30"  Width="100" Content="Customers" Click="Customers_Clicked"/>
+                <Button Height="30" Width="100" Content="Machines" Click="Machines_Clicked"/>
+            </StackPanel>
+        </DockPanel>
+
+        <ContentControl Background="AliceBlue" Grid.Row="0" Grid.Column="1"  Grid.RowSpan="5" Content="{Binding}"/>
+
     </Grid>
 </Window>

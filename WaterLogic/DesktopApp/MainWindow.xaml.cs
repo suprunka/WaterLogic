@@ -24,5 +24,14 @@ namespace DesktopApp
         {
             InitializeComponent();
         }
+
+        public void Customers_Clicked(object sender, RoutedEventArgs e)
+        {
+            DataContext = new Customers();
+        }
+    public void Machines_Clicked(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
