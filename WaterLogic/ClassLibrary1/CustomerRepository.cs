@@ -1,4 +1,4 @@
-﻿using ClassLibrary1.DbConnection;
+﻿using Repository.DbConnection;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace Repository
         private WaterDatabaseDataContext context;
         public CustomerRepository()
         {
-            context = new WaterDatabaseDataContext(global::ClassLibrary1.Properties.Settings.Default.dmai0917_1067608ConnectionString);
+            context = new WaterDatabaseDataContext(global::Repository.Properties.Settings.Default.dmai0917_1067608ConnectionString);
             //customerTable = context.Customers;
         }
         public bool Delete(string id)
@@ -42,6 +42,11 @@ namespace Repository
             return false;
         }
 
+        public IQueryable<Customer> GetAll()
+        {
+            return context.Customers.AsQueryable<Customer>();
+        }
+
         public Customer GetCustomer(string id)
         {
             return context.Customers.FirstOrDefault(x => x.AspId == id);
@@ -58,5 +63,7 @@ namespace Repository
             context.SubmitChanges();
             return true;
         }
+
+      
     }
 }

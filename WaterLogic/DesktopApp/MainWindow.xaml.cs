@@ -31,6 +31,7 @@ namespace DesktopApp
         }
     public void Machines_Clicked(object sender, RoutedEventArgs e)
         {
+            DataContext = new Machines();
 
         }
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using DesktopApp.EmployeeLogin;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +20,7 @@ namespace DesktopApp
     /// </summary>
     public partial class Login : Window
     {
+        private IEmployeeLogin proxy = new EmployeeLoginClient("employeeTcpEndpoint");
         public Login()
         {
             InitializeComponent();
@@ -28,9 +30,10 @@ namespace DesktopApp
         {
             string login = LoginTxt.Text;
             string password = PasswordTxt.Password.ToString();
-            if (login.Equals("employee") && password.Equals("Password1!"))
+            if (proxy.CheckData(login, password))
             {
                 new MainWindow().Show();
+                this.Close();
             }
 
         }

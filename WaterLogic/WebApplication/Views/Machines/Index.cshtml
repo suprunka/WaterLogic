@@ -1,0 +1,34 @@
+﻿@model List<WebApplication.Models.MachineOfferModel>
+@{
+    ViewBag.Title = "Index";
+}
+
+<table class="serviceOfferTable" align="center">
+    <colgroup>
+        <col class="col-md-3">
+        <col class="col-md-3">
+        <col class="col-md-3">
+        <col class="col-md-3">
+    </colgroup>
+    <tr>
+        <td></td>
+        <td></td>
+        <td style="text-align:right">
+          @*  @Html.DropDownList("Sort by", selectListItems, "Sort by", new { id = "sortingList" })*@
+        </td>
+    </tr>
+    <tr>
+        @if (Model != null)
+        {
+            foreach (WebApplication.Models.MachineOfferModel m in Model)
+            {
+                @Html.Partial("MachineOffer", m)
+            }
+        }
+
+    </tr>
+   
+</table>
+
+
+

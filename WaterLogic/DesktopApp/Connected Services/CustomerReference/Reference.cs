@@ -133,6 +133,18 @@ namespace DesktopApp.CustomerReference {
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICustomerService/GetCustomer", ReplyAction="http://tempuri.org/ICustomerService/GetCustomerResponse")]
         System.Threading.Tasks.Task<DesktopApp.CustomerReference.Customer> GetCustomerAsync(string id);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICustomerService/GetAll", ReplyAction="http://tempuri.org/ICustomerService/GetAllResponse")]
+        DesktopApp.CustomerReference.Customer[] GetAll();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICustomerService/GetAll", ReplyAction="http://tempuri.org/ICustomerService/GetAllResponse")]
+        System.Threading.Tasks.Task<DesktopApp.CustomerReference.Customer[]> GetAllAsync();
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICustomerService/SearchByName", ReplyAction="http://tempuri.org/ICustomerService/SearchByNameResponse")]
+        DesktopApp.CustomerReference.Customer[] SearchByName(string name);
+        
+        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/ICustomerService/SearchByName", ReplyAction="http://tempuri.org/ICustomerService/SearchByNameResponse")]
+        System.Threading.Tasks.Task<DesktopApp.CustomerReference.Customer[]> SearchByNameAsync(string name);
     }
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
@@ -192,6 +204,22 @@ namespace DesktopApp.CustomerReference {
         
         public System.Threading.Tasks.Task<DesktopApp.CustomerReference.Customer> GetCustomerAsync(string id) {
             return base.Channel.GetCustomerAsync(id);
+        }
+        
+        public DesktopApp.CustomerReference.Customer[] GetAll() {
+            return base.Channel.GetAll();
+        }
+        
+        public System.Threading.Tasks.Task<DesktopApp.CustomerReference.Customer[]> GetAllAsync() {
+            return base.Channel.GetAllAsync();
+        }
+        
+        public DesktopApp.CustomerReference.Customer[] SearchByName(string name) {
+            return base.Channel.SearchByName(name);
+        }
+        
+        public System.Threading.Tasks.Task<DesktopApp.CustomerReference.Customer[]> SearchByNameAsync(string name) {
+            return base.Channel.SearchByNameAsync(name);
         }
     }
 }

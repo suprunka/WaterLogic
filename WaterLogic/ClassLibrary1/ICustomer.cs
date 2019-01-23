@@ -1,4 +1,4 @@
-﻿using ClassLibrary1.DbConnection;
+﻿using Repository.DbConnection;
 using Repository;
 using System;
 using System.Collections.Generic;
@@ -14,5 +14,6 @@ namespace Repository
         bool Edit(Customer customer );
         bool Delete(string id);
         Customer GetCustomer(string id);
+        IQueryable<Customer> GetAll ();
     }
 }

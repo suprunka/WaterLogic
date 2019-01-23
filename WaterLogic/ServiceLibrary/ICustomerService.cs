@@ -20,5 +20,9 @@ namespace ServiceLibrary
         bool Delete(string id);
         [OperationContract]
         Customer GetCustomer(string id);
+        [OperationContract]
+        IList<Customer> GetAll();
+        [OperationContract]
+        IList<Customer> SearchByName(string name);
     }
 }

@@ -180,8 +180,14 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Reference.svcmap</DependentUpon>
     </Compile>
+    <Compile Include="Connected Services\MachinesReference\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CustomerController.cs" />
+    <Compile Include="Controllers\MachinesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -189,6 +195,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Machines.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -197,6 +204,12 @@
     <None Include="Connected Services\CustomerReference\configuration91.svcinfo" />
     <None Include="Connected Services\CustomerReference\configuration.svcinfo" />
     <None Include="Connected Services\CustomerReference\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Connected Services\MachinesReference\configuration91.svcinfo" />
+    <None Include="Connected Services\MachinesReference\configuration.svcinfo" />
+    <None Include="Connected Services\MachinesReference\Reference.svcmap">
       <Generator>WCF Proxy Generator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </None>
@@ -221,6 +234,17 @@
       <SubType>Designer</SubType>
     </None>
     <Content Include="Properties\DataSources\Model.Customer.datasource" />
+    <None Include="Connected Services\MachinesReference\Model.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MachinesReference\service.wsdl" />
+    <None Include="Connected Services\MachinesReference\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connected Services\MachinesReference\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Properties\DataSources\Model.Machine.datasource" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
@@ -256,9 +280,14 @@
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Customer\UserProfile.cshtml" />
+    <Content Include="Views\Machines\Index.cshtml" />
+    <Content Include="Views\Shared\MachineOffer.cshtml" />
+    <Content Include="Views\Machines\Add.cshtml" />
+    <Content Include="Views\Machines\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Pictures\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -292,6 +321,7 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadataStorage Include="Connected Services\CustomerReference\" />
+    <WCFMetadataStorage Include="Connected Services\MachinesReference\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -7,8 +7,8 @@
     <ProjectGuid>{82994BBB-FD77-437C-B657-21A07ECF5D8B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary1</RootNamespace>
-    <AssemblyName>ClassLibrary1</AssemblyName>
+    <RootNamespace>Repository</RootNamespace>
+    <AssemblyName>Repository</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -59,27 +59,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomerRepository.cs" />
-    <Compile Include="DbConnection\Logging.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Logging.Context.tt</DependentUpon>
+    <Compile Include="DbConnection\AspNetUserEntity.cs">
+      <DependentUpon>Login.tt</DependentUpon>
     </Compile>
-    <Compile Include="DbConnection\Logging.cs">
+    <Compile Include="DbConnection\Login.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Logging.tt</DependentUpon>
+      <DependentUpon>Login.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DbConnection\Logging.Designer.cs">
+    <Compile Include="DbConnection\Login.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Logging.edmx</DependentUpon>
+      <DependentUpon>Login.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DbConnection\Login.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.edmx</DependentUpon>
     </Compile>
     <Compile Include="DbConnection\WaterDatabase.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>WaterDatabase.dbml</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeLoginRepository.cs" />
     <Compile Include="ICustomer.cs" />
+    <Compile Include="IEmployeeLoginRepository.cs" />
+    <Compile Include="IMachinesRepository.cs" />
+    <Compile Include="MachinesRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -94,15 +101,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EntityDeploy Include="DbConnection\Logging.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Logging.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-  </ItemGroup>
-  <ItemGroup>
     <None Include="App.Config" />
-    <None Include="DbConnection\Logging.edmx.diagram">
-      <DependentUpon>Logging.edmx</DependentUpon>
+    <EntityDeploy Include="DbConnection\Login.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Login.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="DbConnection\Login.edmx.diagram">
+      <DependentUpon>Login.edmx</DependentUpon>
     </None>
     <None Include="DbConnection\WaterDatabase.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>
@@ -119,15 +124,15 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DbConnection\Logging.Context.tt">
+    <Content Include="DbConnection\Login.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Logging.Context.cs</LastGenOutput>
-      <DependentUpon>Logging.edmx</DependentUpon>
+      <DependentUpon>Login.edmx</DependentUpon>
+      <LastGenOutput>Login.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="DbConnection\Logging.tt">
+    <Content Include="DbConnection\Login.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Logging.edmx</DependentUpon>
-      <LastGenOutput>Logging.cs</LastGenOutput>
+      <DependentUpon>Login.edmx</DependentUpon>
+      <LastGenOutput>Login.cs</LastGenOutput>
     </Content>
   </ItemGroup>
   <ItemGroup>

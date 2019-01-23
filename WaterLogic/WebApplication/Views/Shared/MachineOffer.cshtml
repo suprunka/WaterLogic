@@ -1,0 +1,30 @@
+﻿@model WebApplication.Models.MachineOfferModel
+@{
+    ViewBag.Title = "MachineOffer";
+    string img = "¬Pictures/small.jpg";
+}
+<td>
+    <div class="card" style="width:400px">
+        @switch (Model.Type)
+        {
+            case 1:
+                img = "/Pictures/small.jpg";
+                break;
+            case 2:
+                img = "¬/Pictures/medium.jpg";
+                break;
+            case 3:
+                img = "¬/Pictures/big.jpg";
+                break;
+
+        }
+
+
+        <img class="card-img-top" src=@img alt="Machine image" style="width:40%">
+        <div class="card-body">
+            <h4 class="card-title">@Model.Name</h4>
+            <p class="card-text">@Model.Price</p>
+            @Html.ActionLink("See details", "Details","Machines", new {Model.Id }, new {  @class="btn btn-primary"})
+        </div>
+    </div>
+</td>

@@ -2,147 +2,153 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 16.875" name="WaterDatabase">
   <DataContextMoniker Name="/WaterDatabaseDataContext" />
   <nestedChildShapes>
-    <classShape Id="d4b66e81-6c44-4a06-8a9f-ecc64b756f08" absoluteBounds="3.75, 0.75, 2, 1.1939925130208335">
-      <DataClassMoniker Name="/WaterDatabaseDataContext/AspNetRole" />
-      <nestedChildShapes>
-        <elementListCompartment Id="15844212-4c5c-45eb-b7bf-6f650467f4c2" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
-      </nestedChildShapes>
-    </classShape>
-    <classShape Id="12ec8b83-fee3-459e-8c64-caa246ac2484" absoluteBounds="6.25, 10.25, 2, 1.5785953776041666">
+    <classShape Id="cbfd8c42-fb0c-4eb4-854b-86bf0fc1fb2b" absoluteBounds="6.25, 10.25, 2, 1.5785953776041666">
       <DataClassMoniker Name="/WaterDatabaseDataContext/Saleline" />
       <nestedChildShapes>
-        <elementListCompartment Id="bd83c32b-fefb-450d-9a6a-7049389534c1" absoluteBounds="6.265, 10.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="1316d148-f3d1-4d88-8f27-f33e73953527" absoluteBounds="6.265, 10.71, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="6a0f8648-7087-4aca-9185-232dcb85f3ad" absoluteBounds="3.5, 12.5, 2, 1.5785953776041666">
+    <classShape Id="b3d456c6-fd8c-4ce2-923f-d89b3c35add5" absoluteBounds="3.75, 0.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/WaterDatabaseDataContext/AspNetRole" />
+      <nestedChildShapes>
+        <elementListCompartment Id="007eda3c-70a8-4936-8d5e-bf0e9ac7115c" absoluteBounds="3.765, 1.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="31a5549f-e48a-4d92-bc4c-50fc043a5135" absoluteBounds="3.5, 12.5, 2, 1.5785953776041666">
       <DataClassMoniker Name="/WaterDatabaseDataContext/AspNetUserClaim" />
       <nestedChildShapes>
-        <elementListCompartment Id="fb023bf0-fac8-4e18-80a0-e1d27e9c7fd6" absoluteBounds="3.515, 12.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="469827b1-8c2c-48e9-9b4a-cc7bd820635e" absoluteBounds="3.515, 12.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="14d22d97-dedd-4d0d-a76f-2c9a93561479" absoluteBounds="3.5, 6.125, 2, 1.3862939453125005">
+    <classShape Id="d61e6965-3d50-4e27-9070-e1dfe9ce676f" absoluteBounds="3.5, 6.125, 2, 1.3862939453125005">
       <DataClassMoniker Name="/WaterDatabaseDataContext/AspNetUserLogin" />
       <nestedChildShapes>
-        <elementListCompartment Id="49cfc2f7-cd9b-4489-939f-d62a301da588" absoluteBounds="3.515, 6.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="0544d170-4759-48da-acce-6b243f69520f" absoluteBounds="3.515, 6.585, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="2efabb3a-c928-4188-bf24-24181ccdd91d" absoluteBounds="6.5, 7.75, 2, 1.1939925130208344">
+    <classShape Id="a5174f43-47d4-4ec2-87ed-2320db5e5f28" absoluteBounds="6.5, 7.75, 2, 1.1939925130208344">
       <DataClassMoniker Name="/WaterDatabaseDataContext/AspNetUserRole" />
       <nestedChildShapes>
-        <elementListCompartment Id="f9d5d95a-c0e3-4768-9f3f-450dd669d648" absoluteBounds="6.515, 8.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="d85c1002-2e3a-4d5e-8255-4dae6aeaed50" absoluteBounds="6.515, 8.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="1fc07efe-aca4-4087-bdff-09b17e20c002" absoluteBounds="0.75, 6.75, 2, 3.1170068359375005">
+    <classShape Id="8bff5b28-2aec-496d-97fe-9a2ecb514812" absoluteBounds="0.75, 6.75, 2, 3.1170068359375005">
       <DataClassMoniker Name="/WaterDatabaseDataContext/AspNetUser" />
       <nestedChildShapes>
-        <elementListCompartment Id="54a4ed83-703d-4456-b73d-eb96569bf889" absoluteBounds="0.765, 7.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="a104a25c-ff34-4a61-aae2-7fd8bd53817a" absoluteBounds="0.765, 7.21, 1.9700000000000002, 2.5570068359375" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="5d7f89d2-af86-4184-acc1-83b4e770c759" absoluteBounds="6.5, 4.625, 2, 1.3862939453125005">
+    <classShape Id="091350fc-a574-49fe-a284-7bb82c4a941e" absoluteBounds="6.5, 4.625, 2, 1.3862939453125005">
       <DataClassMoniker Name="/WaterDatabaseDataContext/Cart" />
       <nestedChildShapes>
-        <elementListCompartment Id="66abe634-eb09-48e9-8539-5db1c7759f01" absoluteBounds="6.515, 5.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="d9cfda9a-7654-48df-ae77-2c0bfafbf9e5" absoluteBounds="6.515, 5.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="5cbfd166-7f7f-44e2-80b8-6484cfade5ab" absoluteBounds="3.5, 14.875, 2, 1.7708968098958344">
+    <classShape Id="be7c29dc-f2e2-4e5b-8e73-5b334dff04d7" absoluteBounds="3.5, 14.875, 2, 1.7708968098958344">
       <DataClassMoniker Name="/WaterDatabaseDataContext/Customer" />
       <nestedChildShapes>
-        <elementListCompartment Id="442f7990-9dce-497c-a58d-3fa71841f73a" absoluteBounds="3.515, 15.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="46e0e407-808d-4453-99cd-3c6b603a2fee" absoluteBounds="3.515, 15.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="ec4b8531-8ed6-4804-9776-46f4cb54e6b7" absoluteBounds="3.75, 3.375, 2, 1.9631982421875">
+    <classShape Id="c117f780-f807-46ee-b789-979d89548acd" absoluteBounds="6.75, 1.375, 2, 1.3862939453125003">
+      <DataClassMoniker Name="/WaterDatabaseDataContext/EmployeeRegister" />
+      <nestedChildShapes>
+        <elementListCompartment Id="a7fb8ada-bc75-4d24-aa98-a65a5672035f" absoluteBounds="6.765, 1.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="40695940-abf4-4801-8076-9953a227353f" absoluteBounds="3.75, 3.375, 2, 1.9631982421875">
       <DataClassMoniker Name="/WaterDatabaseDataContext/Machine" />
       <nestedChildShapes>
-        <elementListCompartment Id="fab3df73-80b9-48a7-aed4-5d38f5af31ce" absoluteBounds="3.765, 3.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="0d4a3317-19bb-43dd-a474-970bc785720b" absoluteBounds="3.765, 3.835, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="c258829e-7e09-41d6-968b-123d42475b2b" absoluteBounds="1, 3.75, 2, 1.1939925130208344">
+    <classShape Id="5df613bd-5a43-46e4-baa8-1edbaff386d2" absoluteBounds="1, 3.75, 2, 1.1939925130208344">
       <DataClassMoniker Name="/WaterDatabaseDataContext/MachineType" />
       <nestedChildShapes>
-        <elementListCompartment Id="573d37c0-1925-449d-ae26-e78ce4fddbf6" absoluteBounds="1.0150000000000001, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="b9890979-1811-4caa-90a8-dc219b834b80" absoluteBounds="1.0150000000000001, 4.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="d878a918-2d2f-46ec-b5dc-f0237e536ab0" absoluteBounds="3.5, 10.375, 2, 1.3862939453124987">
+    <classShape Id="e8201b08-5d6f-4360-812d-a07fef42641f" absoluteBounds="3.5, 10.375, 2, 1.3862939453124987">
       <DataClassMoniker Name="/WaterDatabaseDataContext/OrderTable" />
       <nestedChildShapes>
-        <elementListCompartment Id="bd08f938-7c6c-4acf-bbbc-2d468ebc8b74" absoluteBounds="3.515, 10.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="3f40e124-b72b-4a37-a8c5-bb3fe126aabd" absoluteBounds="3.515, 10.835, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
     <associationConnector edgePoints="[(5.75 : 1.94307305724159); (6.125 : 2.31807305724159); (6.125 : 7.375); (6.5 : 7.75)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/WaterDatabaseDataContext/AspNetRole/AspNetRole_AspNetUserRole" />
       <nodes>
-        <classShapeMoniker Id="d4b66e81-6c44-4a06-8a9f-ecc64b756f08" />
-        <classShapeMoniker Id="2efabb3a-c928-4188-bf24-24181ccdd91d" />
+        <classShapeMoniker Id="b3d456c6-fd8c-4ce2-923f-d89b3c35add5" />
+        <classShapeMoniker Id="a5174f43-47d4-4ec2-87ed-2320db5e5f28" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(1.75 : 9.8670068359375); (1.75 : 13.2892976888021); (2.19791916666667 : 13.2892976888021 : JumpStart); (2.36458583333333 : 13.2892976888021 : JumpEnd); (3.5 : 13.2892976888021)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(1.75 : 9.8670068359375); (1.75 : 13.2892976888021); (3.5 : 13.2892976888021)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/WaterDatabaseDataContext/AspNetUser/AspNetUser_AspNetUserClaim" />
       <nodes>
-        <classShapeMoniker Id="1fc07efe-aca4-4087-bdff-09b17e20c002" />
-        <classShapeMoniker Id="6a0f8648-7087-4aca-9185-232dcb85f3ad" />
+        <classShapeMoniker Id="8bff5b28-2aec-496d-97fe-9a2ecb514812" />
+        <classShapeMoniker Id="31a5549f-e48a-4d92-bc4c-50fc043a5135" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 7.13064697265625); (3.5 : 7.13064697265625)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 7.13064697265625); (3.5 : 7.13064697265625)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/WaterDatabaseDataContext/AspNetUser/AspNetUser_AspNetUserLogin" />
       <nodes>
-        <classShapeMoniker Id="1fc07efe-aca4-4087-bdff-09b17e20c002" />
-        <classShapeMoniker Id="14d22d97-dedd-4d0d-a76f-2c9a93561479" />
+        <classShapeMoniker Id="8bff5b28-2aec-496d-97fe-9a2ecb514812" />
+        <classShapeMoniker Id="d61e6965-3d50-4e27-9070-e1dfe9ce676f" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.75 : 8.37824875651042); (5.57291666666667 : 8.37824875651042 : JumpStart); (5.73958333333333 : 8.37824875651042 : JumpEnd); (6.5 : 8.37824875651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.75 : 8.37824875651042); (6.5 : 8.37824875651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/WaterDatabaseDataContext/AspNetUser/AspNetUser_AspNetUserRole" />
       <nodes>
-        <classShapeMoniker Id="1fc07efe-aca4-4087-bdff-09b17e20c002" />
-        <classShapeMoniker Id="2efabb3a-c928-4188-bf24-24181ccdd91d" />
+        <classShapeMoniker Id="8bff5b28-2aec-496d-97fe-9a2ecb514812" />
+        <classShapeMoniker Id="a5174f43-47d4-4ec2-87ed-2320db5e5f28" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(0.84375 : 6.75); (0.84375 : 5.70599609375); (5.57291666666667 : 5.70599609375 : JumpStart); (5.73958333333333 : 5.70599609375 : JumpEnd); (6.04166666666667 : 5.70599609375 : JumpStart); (6.20833333333333 : 5.70599609375 : JumpEnd); (6.5 : 5.70599609375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(0.84375 : 6.75); (0.84375 : 5.70599609375); (6.5 : 5.70599609375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/WaterDatabaseDataContext/AspNetUser/AspNetUser_Cart" />
       <nodes>
-        <classShapeMoniker Id="1fc07efe-aca4-4087-bdff-09b17e20c002" />
-        <classShapeMoniker Id="5d7f89d2-af86-4184-acc1-83b4e770c759" />
+        <classShapeMoniker Id="8bff5b28-2aec-496d-97fe-9a2ecb514812" />
+        <classShapeMoniker Id="091350fc-a574-49fe-a284-7bb82c4a941e" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(2.2812525 : 9.8670068359375); (2.2812525 : 15.7604484049479); (3.5 : 15.7604484049479)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(2.2812525 : 9.8670068359375); (2.2812525 : 15.7604484049479); (3.5 : 15.7604484049479)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/WaterDatabaseDataContext/AspNetUser/AspNetUser_Customer" />
       <nodes>
-        <classShapeMoniker Id="1fc07efe-aca4-4087-bdff-09b17e20c002" />
-        <classShapeMoniker Id="5cbfd166-7f7f-44e2-80b8-6484cfade5ab" />
+        <classShapeMoniker Id="8bff5b28-2aec-496d-97fe-9a2ecb514812" />
+        <classShapeMoniker Id="be7c29dc-f2e2-4e5b-8e73-5b334dff04d7" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.65625 : 5.3381982421875); (5.65625 : 10.28125); (6.25 : 10.28125)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.65625 : 5.3381982421875); (5.65625 : 10.28125); (6.25 : 10.28125)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/WaterDatabaseDataContext/Machine/Machine_Saleline" />
       <nodes>
-        <classShapeMoniker Id="ec4b8531-8ed6-4804-9776-46f4cb54e6b7" />
-        <classShapeMoniker Id="12ec8b83-fee3-459e-8c64-caa246ac2484" />
+        <classShapeMoniker Id="40695940-abf4-4801-8076-9953a227353f" />
+        <classShapeMoniker Id="cbfd8c42-fb0c-4eb4-854b-86bf0fc1fb2b" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.75 : 4.98159912109375); (6.04166666666667 : 4.98159912109375 : JumpStart); (6.20833333333333 : 4.98159912109375 : JumpEnd); (6.5 : 4.98159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.75 : 4.98159912109375); (6.5 : 4.98159912109375)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/WaterDatabaseDataContext/Machine/Machine_Cart" />
       <nodes>
-        <classShapeMoniker Id="ec4b8531-8ed6-4804-9776-46f4cb54e6b7" />
-        <classShapeMoniker Id="5d7f89d2-af86-4184-acc1-83b4e770c759" />
+        <classShapeMoniker Id="40695940-abf4-4801-8076-9953a227353f" />
+        <classShapeMoniker Id="091350fc-a574-49fe-a284-7bb82c4a941e" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(3 : 4.34699625651042); (3.75 : 4.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(3 : 4.34699625651042); (3.75 : 4.34699625651042)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/WaterDatabaseDataContext/MachineType/MachineType_Machine" />
       <nodes>
-        <classShapeMoniker Id="c258829e-7e09-41d6-968b-123d42475b2b" />
-        <classShapeMoniker Id="ec4b8531-8ed6-4804-9776-46f4cb54e6b7" />
+        <classShapeMoniker Id="5df613bd-5a43-46e4-baa8-1edbaff386d2" />
+        <classShapeMoniker Id="40695940-abf4-4801-8076-9953a227353f" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(5.5 : 11.0681469726562); (6.25 : 11.0681469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(5.5 : 11.0681469726562); (6.25 : 11.0681469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/WaterDatabaseDataContext/OrderTable/OrderTable_Saleline" />
       <nodes>
-        <classShapeMoniker Id="d878a918-2d2f-46ec-b5dc-f0237e536ab0" />
-        <classShapeMoniker Id="12ec8b83-fee3-459e-8c64-caa246ac2484" />
+        <classShapeMoniker Id="e8201b08-5d6f-4360-812d-a07fef42641f" />
+        <classShapeMoniker Id="cbfd8c42-fb0c-4eb4-854b-86bf0fc1fb2b" />
       </nodes>
     </associationConnector>
-    <associationConnector edgePoints="[(1.2187475 : 9.8670068359375); (1.2187475 : 11.0681469726562); (1.66666666666667 : 11.0681469726562 : JumpStart); (1.83333333333333 : 11.0681469726562 : JumpEnd); (2.19791916666667 : 11.0681469726562 : JumpStart); (2.36458583333333 : 11.0681469726562 : JumpEnd); (3.5 : 11.0681469726562)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+    <associationConnector edgePoints="[(1.2187475 : 9.8670068359375); (1.2187475 : 11.0681469726562); (3.5 : 11.0681469726562)]" fixedFrom="NotFixed" fixedTo="NotFixed">
       <AssociationMoniker Name="/WaterDatabaseDataContext/AspNetUser/AspNetUser_OrderTable" />
       <nodes>
-        <classShapeMoniker Id="1fc07efe-aca4-4087-bdff-09b17e20c002" />
-        <classShapeMoniker Id="d878a918-2d2f-46ec-b5dc-f0237e536ab0" />
+        <classShapeMoniker Id="8bff5b28-2aec-496d-97fe-9a2ecb514812" />
+        <classShapeMoniker Id="e8201b08-5d6f-4360-812d-a07fef42641f" />
       </nodes>
     </associationConnector>
   </nestedChildShapes>

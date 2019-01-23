@@ -10,26 +10,28 @@
 namespace Repository.DbConnection
 {
     using Microsoft.AspNet.Identity.EntityFramework;
-    using Model;
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class dmai0917_1067608Entities : IdentityDbContext<ApplicationUser>
+    public partial class dmai0917_1067608Entities2 : IdentityDbContext<Model.ApplicationUser>
     {
-        public dmai0917_1067608Entities()
+        public dmai0917_1067608Entities2()
             : base("data source=kraka.ucn.dk;initial catalog=dmai0917_1067608;user id=dmai0917_1067608;password=Password1!;MultipleActiveResultSets=True;App=EntityFramework")
         {
         }
-    
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
         }
-        public static dmai0917_1067608Entities Create()
+
+        public static dmai0917_1067608Entities2 Create()
         {
-            return new dmai0917_1067608Entities();
+            return new dmai0917_1067608Entities2();
         }
 
+
+        public virtual DbSet<AspNetUserEntity> AspNetUserEntities { get; set; }
     }
 }

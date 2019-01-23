@@ -9,7 +9,7 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-    
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition/>
@@ -28,7 +28,7 @@
             </StackPanel>
         </DockPanel>
 
-        <ContentControl Background="AliceBlue" Grid.Row="0" Grid.Column="1"  Grid.RowSpan="5" Content="{Binding}"/>
+        <ContentControl Background="AliceBlue" Grid.Row="1"  Grid.RowSpan="5" Content="{Binding}" Margin="-10,0,10.333,-0.333"/>
 
     </Grid>
 </Window>
