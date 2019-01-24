@@ -1,0 +1,64 @@
+﻿@model WebApplication.Models.ShopingCartOrderModel
+@{
+    ViewBag.Title = "ShoppingCart";
+    double totalPrice = 0;
+}
+
+       @if (Model.Error.Length>1)
+
+        {
+
+            <div class="alert alert-danger">
+                <strong>Danger!</strong>@Model.Error
+            </div>
+        }
+    
+
+
+
+<style>
+    .buttonBuy {
+        background: url(/Pictures/Buy.png) no-repeat top left;
+        display: block;
+        height: 100px;
+        text-indent: -9999px; /* hides the link text */
+    }
+
+    .table {
+        margin: 0;
+    }
+</style>
+
+<h2>ShoppingCart</h2>
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <td> Machine Name</td>
+                <td> Quantity </td>
+                <td> Price</td>
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (WebApplication.Models.ShoppingCartItem item in Model.ShoppingCartItems)
+            {
+                <tr>
+                    <td>@Html.ActionLink(item.MmachineItem.Name, "Details", "Machines", new { id = item.MmachineItem.Id }, new { })</td>
+                    <td>@item.Quantity</td>
+                    <td>@item.MmachineItem.Price</td>
+                    <td>@Html.ActionLink("Remove", "RemoveFromCart", "Order", new { id = item.Id }, new { })</td>
+                    @{totalPrice = totalPrice + item.MmachineItem.Price * item.Quantity;}
+                </tr>
+            }
+            <tr>
+                <td colspan="2"><h3>Total price:</h3></td>
+                <td><h3>@totalPrice DKK</h3></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td>@Html.ActionLink("hh", "CreateOrder", new { }, new { @class = "buttonBuy" }) </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

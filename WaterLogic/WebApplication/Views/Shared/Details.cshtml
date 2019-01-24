@@ -3,11 +3,11 @@
     ViewBag.Title = "Details";
     string img = "/Pictures/small.jpg";
     int val = 1;
-
 }
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
-<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 <style>
     .button {
         background: url(/Pictures/addToCart.jpg) no-repeat top left;
@@ -16,11 +16,27 @@
         text-indent: -9999px; /* hides the link text */
     }
 </style>
+@if (Model.Succed != null)
+{
+    if ((bool)Model.Succed)
+    {
+        <div class="alert alert-success">
+            <strong>Success!</strong> The machine is added to Cart.
+        </div>
+    }
+    else
+    {
+
+        <div class="alert alert-danger">
+            <strong>Danger!</strong>I can't add to cart
+        </div>
+    }
+}
 <div class="row">
     <div class="col-sm-3">
-        <h2>@Model.Name</h2>
-        <h2>@Model.Id</h2>
-        <p>@Model.Description</p>
+        <h1>@Model.Name</h1>
+        <p style="font-size:7px;">This model Id is:@Model.Id</p>
+        <p>Description: @Model.Description</p>
     </div>
     <div class="col-sm-9">
 
@@ -50,7 +66,7 @@
                 <span class="input-group-btn">
                     <button class="btn btn-default" data-dir="dwn"><span class="glyphicon glyphicon-minus"></span></button>
                 </span>
-                <input type="text" class="form-control text-center" value="1">
+                <input id ="quantity" type="text" class="form-control text-center" value="1">
                 <span class="input-group-btn">
                     <button class="btn btn-default" data-dir="up"><span class="glyphicon glyphicon-plus"></span></button>
                 </span>
@@ -59,9 +75,8 @@
     </div>
     <div class="row">
         <div class="col-sm-4">
-            @Html.ActionLink("Add to cart", "AddToCart", "Order", new { Model.Id, val }, new { @class = "button" })
+            @Html.ActionLink("Add to cart", "AddToCart", "Order", new { machineId = Model.Id, quantity = val }, new { @class = "button", @id = "addToCart" })
 
-            
         </div>
     </div>
 
@@ -80,8 +95,12 @@
                     newVal = 1;
                 }
             }
-            @val = newVal;
             btn.closest('.number-spinner').find('input').val(newVal);
+               
+            $('#addToCart').click(function () {
+                var value = $('#quantity').val();
+                    var path = '@Url.Content("~/Order/AddToCart")' + "?machineId=@Model.Id +&quantity=" + value;
+                    $(this).attr("href", path);
+            });
         });
-
     </script>

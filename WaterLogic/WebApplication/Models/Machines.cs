@@ -33,6 +33,6 @@ namespace WebApplication.Models
         public double Price { get; set; }
         [RegularExpression("^[0-9]*$", ErrorMessage = "The quantity must be a number.")]
         public int Quantity { get; set; }
-        public bool Succed { get; set; }
+        public bool? Succed { get; set; }
     }
 }

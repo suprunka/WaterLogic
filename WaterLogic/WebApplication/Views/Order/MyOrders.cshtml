@@ -1,0 +1,59 @@
+﻿@model IList<WebApplication.Models.MyOrderModel>
+@{
+    ViewBag.Title = "MyOrders";
+
+}
+  <h2>MyOrders</h2>
+
+    <div class="container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <td> ID</td>
+                    <td> TotalPrice </td>
+                    <td> Payed</td>
+                </tr>
+            </thead>
+            <tbody>
+
+                @foreach (WebApplication.Models.MyOrderModel item in Model)
+                {
+                <tr style="background-color:gainsboro;font-weight:500">
+                    <td>@item.Id</td>
+                    <td>@item.TotalPrice</td>
+                    <td>
+
+                        @if (item.Payed)
+                        {
+                            <p>Order is payed</p>
+                        }
+                        else
+                        {
+                            @Html.ActionLink("Pay now", "Pay", new { id = item.Id })
+                        }
+                    </td>
+                    <td>
+
+                        @if (!item.Payed)
+                        {
+                            @Html.ActionLink("Delete", "DeleteOrder", new { id = item.Id })
+                        }
+
+                    </td>
+                </tr>
+
+                    foreach (WebApplication.Models.SalelineModel saleline in item.Salelines)
+                    {
+                        <tr>
+                            <td>@Html.ActionLink(saleline.MachineName, "Details", "Machines", new { id = saleline.MAchineId }, new { })</td>
+                            <td>@saleline.Quantity</td>
+                            <td>@saleline.Price</td>
+                        </tr>
+
+                    }
+
+                }
+
+            </tbody>
+        </table>
+    </div>

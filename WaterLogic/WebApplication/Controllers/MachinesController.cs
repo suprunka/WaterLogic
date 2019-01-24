@@ -20,7 +20,7 @@ namespace WebApplication.Controllers
             int type = 3;
             foreach (var el in list)
             {
-                switch (el.MachineType)
+                switch (el.Type)
                 {
                     case MachineType.Small:
                         type = 1;
@@ -61,7 +61,7 @@ namespace WebApplication.Controllers
             }
 
 
-           var result = proxy.CreateAsync(new Model.Machine() { Name = model.Name, Description = model.Description, Price = model.Price, Quantity = model.Quantity, MachineType = mType });
+           var result = proxy.CreateAsync(new Model.Machine() { Name = model.Name, Description = model.Description, Price = model.Price, Quantity = model.Quantity, Type = mType });
             if (result.Result)
             {
                 return View("Add", new AddMachineModel() { Succed = true });
@@ -74,7 +74,7 @@ namespace WebApplication.Controllers
             var machine = proxy.GetAsync(id).Result;
             int type = 3;
 
-            switch (machine.MachineType)
+            switch (machine.Type)
             {
                 case MachineType.Small:
                     type = 1;
@@ -83,7 +83,7 @@ namespace WebApplication.Controllers
                     type = 2;
                     break;
             }
-            return View("Details", new AddMachineModel() {Id= machine.Id, Name = machine.Name, Description = machine.Description, Price = machine.Price, Quantity = machine.Quantity, Type = type });
+            return View("Details", new AddMachineModel() {Id= machine.Id, Name = machine.Name, Description = machine.Description, Price = machine.Price, Quantity = machine.Quantity, Type = type , Succed= null});
         }
     }
 }
